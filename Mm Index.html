@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K.G.N. PHOTO STUDIO & CSC SERVICES CENTRE</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;background:linear-gradient(135deg,#070b34,#101a55 45%,#061b2c);color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:1000;background:rgba(4,7,30,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.15);padding:12px 5%}
+.brand{font-size:clamp(20px,4vw,34px);font-weight:900;text-align:center;letter-spacing:1px;background:linear-gradient(90deg,#ff4d6d,#ffd166,#06d6a0,#4cc9f0,#c77dff,#ff4d6d);background-size:300%;-webkit-background-clip:text;color:transparent;animation:gradient 5s linear infinite,glow 2s ease-in-out infinite alternate}
+@keyframes gradient{to{background-position:300%}}
+@keyframes glow{from{filter:drop-shadow(0 0 3px rgba(255,255,255,.3))}to{filter:drop-shadow(0 0 12px rgba(255,255,255,.9))}}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:10px}
+nav a{padding:8px 13px;border-radius:20px;font-weight:700;background:linear-gradient(90deg,#ff006e,#8338ec,#3a86ff);background-size:200%;animation:navcolor 4s linear infinite;transition:.25s}
+nav a:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 8px 25px rgba(58,134,255,.45)}
+@keyframes navcolor{to{background-position:200%}}
+.hero{text-align:center;padding:65px 20px 45px;background:radial-gradient(circle at 50% 20%,rgba(255,209,102,.22),transparent 35%)}
+.hero h1{font-size:clamp(28px,7vw,58px);margin-bottom:12px}
+.hero p{font-size:18px;color:#d9e4ff;max-width:800px;margin:auto}
+.container{width:min(1150px,92%);margin:auto}
+section{padding:55px 0}
+.section-title{text-align:center;font-size:32px;margin-bottom:25px;background:linear-gradient(90deg,#ffd166,#06d6a0,#4cc9f0,#c77dff);-webkit-background-clip:text;color:transparent}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:25px;box-shadow:0 12px 35px rgba(0,0,0,.2);transition:.3s}
+.card:hover{transform:translateY(-5px);background:rgba(255,255,255,.11)}
+.vertical-list{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.vertical-list a,.work-list a{display:block;padding:11px 15px;border-radius:12px;background:linear-gradient(90deg,rgba(255,77,109,.18),rgba(76,201,240,.12));border-left:4px solid #ffd166;transition:.2s}
+.vertical-list a:hover,.work-list a:hover{transform:translateX(7px);background:rgba(255,255,255,.15)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.product{padding:20px;border-radius:18px;background:linear-gradient(135deg,rgba(255,209,102,.14),rgba(76,201,240,.1));border:1px solid rgba(255,255,255,.13);font-size:17px;transition:.25s}
+.product:hover{transform:scale(1.03);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.work-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px}
+.contact-box{text-align:center}
+.phone{display:inline-block;margin:12px 5px;padding:14px 22px;border-radius:30px;background:linear-gradient(90deg,#06d6a0,#118ab2);font-weight:900;font-size:20px}
+footer{margin-top:30px;padding:35px 5%;background:rgba(0,0,0,.45);border-top:1px solid rgba(255,255,255,.15)}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px}
+footer h3{color:#ffd166;margin-bottom:10px}
+footer a{display:block;color:#dce6ff;margin:6px 0}
+footer a:hover{color:#06d6a0}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:2000;align-items:center;justify-content:center;padding:20px}
+.modal.show{display:flex}
+.modal-box{width:min(420px,100%);background:#10183d;border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:25px;position:relative}
+.close{position:absolute;right:16px;top:10px;font-size:28px;cursor:pointer}
+.tabs{display:flex;gap:8px;margin:18px 0}
+.tabs button,.form button{flex:1;border:0;padding:11px;border-radius:12px;background:linear-gradient(90deg,#8338ec,#3a86ff);color:#fff;font-weight:700;cursor:pointer}
+.form{display:none}.form.active{display:block}
+.form input{width:100%;padding:12px;margin:7px 0;border-radius:10px;border:1px solid #52608d;background:#080e2c;color:#fff}
+.form small{display:block;color:#b9c5e8;margin:5px 0 10px}
+.notice{margin-top:12px;padding:10px;border-radius:10px;background:rgba(255,209,102,.12);font-size:13px;color:#ffe9a8}
+#top{position:fixed;right:18px;bottom:18px;width:45px;height:45px;border:0;border-radius:50%;background:#ff4d6d;color:#fff;font-size:20px;cursor:pointer;z-index:900}
+@media(max-width:600px){header{padding:10px 3%}nav a{font-size:13px;padding:7px 9px}.hero{padding-top:40px}.card{padding:18px}.work-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="home">
+
+<header>
+  <div class="brand">K.G.N. PHOTO STUDIO &amp; CSC SERVICES CENTRE</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#work">🔍</a>
+    <a href="#" onclick="openLogin();return false">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Digital &amp; Online Services</h1>
+    <p>तेज़, आसान और भरोसेमंद डिजिटल सेवाएँ — एक ही जगह पर।</p>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Us</h2>
+<div class="card">
+<p>हमारा Cyber Cafe आपके लिए एक ही जगह पर कई Digital और Online Services उपलब्ध कराता है। हमारा उद्देश्य लोगों को तेज़, आसान और भरोसेमंद ऑनलाइन सेवाएँ प्रदान करना है।</p>
+<div class="vertical-list">
+<a href="#work">Online Form भरना</a>
+<a href="#work">Print &amp; Photocopy</a>
+<a href="#work">Scanning और Document Upload</a>
+<a href="#work">फोटो और पासपोर्ट फोटो</a>
+<a href="#work">Online Application</a>
+<a href="#work">Resume बनाना</a>
+<a href="#work">Ticket Booking</a>
+<a href="#work">सरकारी एवं अन्य Online Services</a>
+<a href="#work">Typing और Document Work</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2 class="section-title">Our Services</h2>
+<div class="card">
+<p>हमारा Cyber Cafe आपके लिए एक ही जगह पर कई Digital और Online Services उपलब्ध कराता है। हमारा उद्देश्य लोगों को तेज़, आसान और भरोसेमंद ऑनलाइन सेवाएँ प्रदान करना है।</p>
+<div class="vertical-list">
+<a href="#work">Online Form भरना</a><a href="#work">Print &amp; Photocopy</a><a href="#work">Scanning और Document Upload</a>
+<a href="#work">फोटो और पासपोर्ट फोटो</a><a href="#work">Online Application</a><a href="#work">Resume बनाना</a>
+<a href="#work">Ticket Booking</a><a href="#work">सरकारी एवं अन्य Online Services</a><a href="#work">Typing और Document Work</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="products">
+<div class="container">
+<h2 class="section-title">Products</h2>
+<div class="grid">
+<div class="product">📄 A4 Paper / Printing Paper</div><div class="product">📁 File &amp; Folder</div>
+<div class="product">✏️ Pen &amp; Pencil</div><div class="product">📓 Notebook</div>
+<div class="product">📎 Stationery Items</div><div class="product">💾 Pen Drive</div>
+<div class="product">💿 Memory Card</div><div class="product">🔌 USB Cable</div>
+<div class="product">🖨️ Printer Ink / Cartridge</div><div class="product">📸 Passport Size Photo</div>
+<div class="product">🖼️ Photo Print</div><div class="product">🧾 Photocopy / Xerox</div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<h2 class="section-title">🔍 A to Z Online Work &amp; Services</h2>
+<div class="work-list">
+<a target="_blank" href="https://myaadhaar.uidai.gov.in/">Aadhaar Services – Apply / Update / Correction / Download</a>
+<a target="_blank" href="https://www.pan.utiitsl.com/">PAN Card Services – Apply / Correction / Download</a>
+<a target="_blank" href="https://voters.eci.gov.in/">Voter ID – Apply / Correction / Download</a>
+<a target="_blank" href="https://www.passportindia.gov.in/">Passport Services – Online Application / Appointment</a>
+<a target="_blank" href="https://parivahan.gov.in/">Driving Licence – Learner Licence / Renewal / Application</a>
+<a target="_blank" href="https://parivahan.gov.in/">RC &amp; Vehicle Services – Online Vehicle-related Applications</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">RTPS Services</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">Income Certificate</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">Caste Certificate</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">Residential Certificate</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">EWS Certificate</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">अन्य RTPS Applications</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">Birth Certificate – Online Application / Download</a>
+<a target="_blank" href="https://serviceonline.bihar.gov.in/">Death Certificate – Online Application / Download</a>
+<a href="#contact">Electricity Bill Payment</a>
+<a href="#contact">Water Bill Payment</a>
+<a href="#contact">Mobile &amp; DTH Recharge</a>
+<a href="#contact">Online Form Filling</a>
+<a href="#contact">Government Job Form – Online Application</a>
+<a href="#contact">Private Job Application</a>
+<a href="#contact">Scholarship Form – Online Application</a>
+<a href="#contact">College/University Admission Form</a>
+<a href="#contact">Exam Form &amp; Admit Card</a>
+<a href="#contact">Result Download &amp; Print</a>
+<a href="#contact">Railway / Bus / Flight Ticket Booking</a>
+<a href="#contact">Printout – B&amp;W / Colour</a>
+<a href="#contact">Photocopy / Xerox</a>
+<a href="#contact">Document Scanning &amp; Upload</a>
+<a href="#contact">Passport Size Photo</a>
+<a href="#contact">Photo Editing &amp; Printing</a>
+<a href="#contact">Resume / CV Making</a>
+<a href="#contact">Typing Work – Hindi / English</a>
+<a href="#contact">PDF – Merge / Split / Convert</a>
+<a href="#contact">Lamination</a>
+<a href="#contact">Email / Online Document Submission</a>
+<a target="_blank" href="https://www.epfindia.gov.in/">EPFO / PF Online Services</a>
+<a target="_blank" href="https://www.incometax.gov.in/">Income Tax / ITR-related Online Work</a>
+<a href="#contact">Insurance-related Online Services</a>
+<a href="#contact">Banking / Online Payment Assistance</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2 class="section-title">Contact Us</h2>
+<div class="card contact-box">
+<h2>K.G.N. PHOTO STUDIO &amp; CSC SERVICES CENTRE</h2>
+<p>📍 Chiraiya Bajar Aur Hatt, Amarpur, Banks, Bihar</p>
+<a class="phone" href="tel:8678072240">📞 8678072240</a>
+<a class="phone" href="tel:9570191634">📱 9570191634</a>
+<p>🕐 Opening Hours: 9:00 AM – 8:00 PM</p>
+<br>
+<a class="phone" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Chiraiya+Bajar+Aur+Hatt,+Amarpur,+Banka,+Bihar">📍 Google Map</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div><h3>Cyber Cafe</h3><p>K.G.N. PHOTO STUDIO &amp; CSC SERVICES CENTRE</p></div>
+<div><h3>Quick Links</h3><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#contact">Contact Us</a></div>
+<div><h3>Contact</h3><p>Address: Chiraiya Bajar Aur Hatt, Amarpur, Banks, Bihar</p><p>Mobile: 8678072240 / 9570191634</p><p>Email: Add your email here</p><p>Opening Hours: 9:00 AM – 8:00 PM</p></div>
+<div><h3>Information</h3><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Chiraiya+Bajar+Aur+Hatt,+Amarpur,+Banka,+Bihar">Google Map</a></div>
+</div>
+<hr style="margin:25px 0;border-color:rgba(255,255,255,.15)">
+<p style="text-align:center">© 2026 K.G.N. PHOTO STUDIO &amp; CSC SERVICES CENTRE. All Rights Reserved.</p>
+</footer>
+
+<button id="top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<div class="modal" id="loginModal">
+<div class="modal-box">
+<span class="close" onclick="closeLogin()">×</span>
+<h2 style="text-align:center">Account</h2>
+<div class="tabs">
+<button onclick="showForm('login')">Login</button>
+<button onclick="showForm('signup')">Sign Up</button>
+<button onclick="showForm('forgot')">Forgot</button>
+</div>
+<div class="form active" id="login">
+<input type="tel" placeholder="Mobile Number" id="loginPhone">
+<input type="password" placeholder="Password" id="loginPass">
+<button onclick="demoLogin()">Login</button>
+<small>OTP वाला real login लगाने के लिए Firebase Authentication/Backend जोड़ना होगा।</small>
+</div>
+<div class="form" id="signup">
+<input type="text" placeholder="Full Name">
+<input type="tel" placeholder="Mobile Number">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Create Password">
+<button onclick="demoSignup()">Sign Up</button>
+</div>
+<div class="form" id="forgot">
+<input type="tel" placeholder="Registered Mobile Number">
+<button onclick="demoOTP()">Send OTP</button>
+<input type="text" placeholder="Enter OTP">
+<button onclick="demoOTP()">Verify OTP</button>
+</div>
+<div class="notice" id="msg">यह अभी front-end demo है; real OTP/database के लिए backend configuration जरूरी है।</div>
+</div>
+</div>
+
+<script>
+function openLogin(){document.getElementById('loginModal').classList.add('show')}
+function closeLogin(){document.getElementById('loginModal').classList.remove('show')}
+function showForm(id){
+ document.querySelectorAll('.form').forEach(x=>x.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+}
+function demoLogin(){document.getElementById('msg').textContent='Login UI तैयार है। Real database + OTP authentication के लिए Firebase/Backend जोड़ें।'}
+function demoSignup(){document.getElementById('msg').textContent='Sign Up UI तैयार है। Real account save करने के लिए database जोड़ना होगा।'}
+function demoOTP(){document.getElementById('msg').textContent='OTP UI तैयार है। असली OTP SMS भेजने के लिए Firebase Phone Authentication या SMS provider चाहिए।'}
+window.onclick=e=>{if(e.target===document.getElementById('loginModal'))closeLogin()}
+</script>
+</body>
+</html>
+        
